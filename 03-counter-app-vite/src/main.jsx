@@ -8,6 +8,6 @@ import './styles.css'
 
 ReacDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <CounterApp value={3000}/>
+        <CounterApp value={18}/>
     </React.StrictMode>
 );
