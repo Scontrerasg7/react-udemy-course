@@ -19,15 +19,17 @@ describe('Pruebas en 09-promesas', () => {
         );
      })
     
+     
     test('getHeroByIdAsync debe retornar error si heroe no existe', (done) => { 
     
-    const id = 100;
-    getHeroByIdAsync(id).catch(
-        error => {
-            expect(error).toBe('No se pudo encontrar heroe ' + id)
-            done();
-        }
-    );
-    })
+        const id = 100;
+        getHeroByIdAsync(id).catch(
+            error => {
+                expect(error).toBe('No se pudo encontrar heroe ' + id)
+                done();
+            }
+        );
+        })
 
- })
+    }
+)

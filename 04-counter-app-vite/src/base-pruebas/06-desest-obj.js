@@ -1,4 +1,4 @@
-const usContext = ({clave, nombre, edad, rango = 'Capitán'}) => {
+export const usContext = ({clave, nombre, edad, rango = 'Capitán'}) => {
     return {
         nombreClave: clave,
         anios: edad,
