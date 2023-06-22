@@ -6,14 +6,15 @@ export const FirstApp = ({
     name
 }) => {
 
-    if (!title) {
-        throw new Error('El title no existe')
-    }
+    // if (!title) {
+    //     throw new Error('El title no existe')
+    // }
 
     return(
         <>
-        <h1>{title}</h1>
+        <h1 data-testid="test-title" >{title}</h1>
         {/* <code>{getValue(newMessage)}</code> */}
+        <p>{subtitle}</p>
         <p>{subtitle}</p>
         <p>{name}</p>
         </>
@@ -22,12 +23,12 @@ export const FirstApp = ({
 
 FirstApp.propTypes = {
     title: PropTypes.string.isRequired,
-    subtitle: PropTypes.number
+    subtitle: PropTypes.string
 }
 
 FirstApp.defaultProps = {
     name: 'SCG',
     subtitle:'No hay subtitulo',
-    title:'No hay titulo',
+    // title:'No hay titulo',
 }
 
