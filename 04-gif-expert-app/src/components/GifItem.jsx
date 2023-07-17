@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 
 export const GifItem = ({title, url}) => {
 
@@ -7,4 +8,16 @@ export const GifItem = ({title, url}) => {
             <p>{ title }</p>
         </div>
     )
+
 }
+
+// título obligatorio
+GifItem.propTypes = {
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
+}
+// 
+
+// GifItem.defaultProps = {
+//     title: 'No hay título'
+// }
